@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{padding: 0px; margin: 0px; font-family: 'Open Sans', sans-serif;}
+
+body{ 
+	background: #8eb068; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	
+}
+
+main{
+	display: flex; 
+	flex-direction: column; 
+	height: 60vh;
+	width: 50%; 
+	justify-content: space-between; 
+	align-items: center;
+	background-color: #d2d595;
+	padding: 2%;
+}
+h1{
+	font-size: 2.9rem;
+}
+
+button{
+	width: 30%;
+	background-color: #fffccd;
+	padding: 1%;
+	font-size:1.5rem;
+	border:none;
+}
+
+input{
+	width: 70%;
+	height: 15%;
+	font-size:1.5rem;
+	text-align: center;
+	background-color: #fffccd;
+}
+
+p{
+	font-size: 1.2rem;
+}
+
+@media screen and (max-width:1326px) {
+	
+	h1{font-size: 2.8rem;}
+	button{font-size:1.4rem;}
+	input{height: 14%; font-size:1.4rem;}
+	p{font-size: 1.1rem;}
+}
+
+@media screen and (max-width:1280px) {h1{font-size: 2.7rem;}}
+
+@media screen and (max-width:1234px) {
+	
+	h1{font-size: 2.6rem;}
+	button{font-size:1.3rem;}
+	input{height: 13%; font-size:1.3rem;}
+	
+	
+}
+
+@media screen and (max-width:1189px) {h1{font-size: 2.5rem;}}
+
+@media screen and (max-width:1143px) {
+	main{height: 58vh;}
+	h1{font-size: 2.4rem;}
+	button{font-size:1.2rem;}
+	input{font-size:1.2rem;}
+	
+}
+
+@media screen and (max-width:1097px) {
+	main{height: 56vh;  }
+	h1{font-size: 2.3rem;}
+}
+
+@media screen and (max-width:1052px) {
+	main{height: 56vh;}
+	h1{font-size: 2.2rem;}
+	button{font-size:1.1rem;}
+	input{font-size:1.1rem;}
+	
+}
+
+@media screen and (max-width:1006px) {
+	main{height: 54vh;}
+	h1{font-size: 2.1rem;}
+}
+
+@media screen and (max-width:960px) {h1{font-size: 2rem;}}
+
+@media screen and (max-width:914px) {
+	h1{font-size: 1.9rem;}
+	button{font-size:1rem;}
+	input{font-size:1rem;}
+	p{font-size: 1rem;}
+	
+}
+
+@media screen and (max-width:869px) {
+	main{height: 52vh;}
+	h1{font-size: 1.8rem;}
+	input{height: 12%;}
+}
+
+@media screen and (max-width:823px) {
+	main{height: 50vh;}
+	h1{font-size: 1.7rem;}
+}
+
+
+
+
