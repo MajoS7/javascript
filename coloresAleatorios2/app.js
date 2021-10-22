@@ -14,9 +14,9 @@ function createColor (){
     }
     let arraynumbers= numbers.split(' ');
     
-    // changeColor.style.backgroundColor = rgb(+arraynumbers[1], arraynumbers[2], arraynumbers[3]);
+    changeColor.style.backgroundColor = `rgb(${arraynumbers[1]}, ${arraynumbers[2]}, ${arraynumbers[3]})`;
     
-    // bodyColor.textContent ="El color es "+ rgb(arraynumbers[0],arraynumbers[1],arraynumbers[2]);
+    bodyColor.textContent ="El color es "+ `rgb(${arraynumbers[1]}, ${arraynumbers[2]}, ${arraynumbers[3]})`;
 }
 
 
