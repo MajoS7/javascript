@@ -1,6 +1,6 @@
 const user= document.querySelector("#user");
 const message =document.querySelector("#message");
-
+const generate = document.querySelector("#generate");
 
 user.addEventListener('keyup', captureCharacter);
 
@@ -17,6 +17,7 @@ function captureCharacter() {
         message.textContent="El usuario no puede contener los siguientes caracteres: '*', '-', '/', '+', '_'";
         message.style.color="#F44336";
         findCharacter=false;
+        generate.disabled =true;
     }
     else if(user.value==""){
         message.textContent="";
@@ -24,6 +25,7 @@ function captureCharacter() {
     else{
         message.textContent="Usuario Valido";
         message.style.color="#2aa649";
+        generate.disabled =false;
     }
     
 }
