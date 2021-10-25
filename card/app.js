@@ -34,6 +34,10 @@ function captureCharacter() {
 generate.addEventListener('click',createCard);
 
 function createCard() {
+    card.classList.remove('styleCard');
+    card.classList.add('styleCard');
+    
+
     if (user.value!=""){
         let cuadro=document.createElement('div');
         cuadro.style.width='80%';
