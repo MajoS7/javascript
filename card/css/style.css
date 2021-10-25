@@ -24,3 +24,19 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+.cuadro{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #c7c7c7;
+    padding: 2%;
+    border-radius:10px;
+}
+input{
+    margin-left: 2%;
+    border: 0px;
+}
+button{
+    padding: 2%;
+}
+
