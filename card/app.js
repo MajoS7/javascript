@@ -5,6 +5,10 @@ const card =document.querySelector("#card");
 
 user.addEventListener('keyup', captureCharacter);
 
+let cuadro=document.createElement('div');
+let textuser= document.createElement('p');
+let welcome =document.createElement('h2');
+
 function captureCharacter() {
     let findCharacter=false;
     for (let i = 0; i < user.value.length; i++) {
@@ -22,6 +26,7 @@ function captureCharacter() {
     }
     else if(user.value==""){
         message.textContent="";
+        cuadro.remove();
     }
     else{
         message.textContent="Usuario Valido";
@@ -33,13 +38,11 @@ function captureCharacter() {
 
 generate.addEventListener('click',createCard);
 
-function createCard() {
-    card.classList.remove('styleCard');
-    card.classList.add('styleCard');
-    
 
+function createCard() {
+    
     if (user.value!=""){
-        let cuadro=document.createElement('div');
+        
         cuadro.style.width='80%';
         cuadro.style.height='90%';
         cuadro.style.borderRadius='30px';
@@ -51,13 +54,12 @@ function createCard() {
     
         card.appendChild(cuadro);
 
-        let textuser= document.createElement('p');
         
         textuser.style.width='55%';
         textuser.style.height='55%';
         textuser.style.marginTop='10%';
         textuser.style.boxShadow='rgb(0 0 0 / 60%) 0px -7px 7px';
-        textuser.style.borderRadius='137px';
+        textuser.style.borderRadius='100%';
         textuser.textContent=user.value;
         textuser.style.display='flex';
         textuser.style.justifyContent='center';
@@ -66,7 +68,6 @@ function createCard() {
         cuadro.appendChild(textuser);
 
 
-        let welcome =document.createElement('h2');
         welcome.textContent="Bienvenido al sistema";
         cuadro.appendChild(welcome);
 
